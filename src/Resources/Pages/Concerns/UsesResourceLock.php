@@ -66,7 +66,7 @@ trait UsesResourceLock
      * to make any changes based on the resource lock that is currently in place.
      * This is just an extra fail-safe, but can be turnoff in the config file.
      */
-    public function save(bool $shouldRedirect = true): void
+    public function save(bool $shouldRedirect = true, bool $shouldSendSavedNotification = true): void
     {
         if (config('resource-lock.check_locks_before_saving', true)) {
             $this->record->refresh();
@@ -78,7 +78,7 @@ trait UsesResourceLock
             }
         }
 
-        parent::save($shouldRedirect);
+        parent::save($shouldRedirect, $shouldSendSavedNotification);
     }
 
     public function getResourceLockOwner(): void
