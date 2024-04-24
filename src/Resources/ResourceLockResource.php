@@ -124,7 +124,7 @@ class ResourceLockResource extends Resource
 
     public static function getNavigationLabel(): string
     {
-        return config('resource-lock.manager.navigation_label', 'Resource Lock Manager');
+        return __(config('resource-lock.manager.navigation_label', 'Resource Lock Manager'));
     }
 
     public static function getNavigationGroup(): ?string
