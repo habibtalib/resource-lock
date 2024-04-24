@@ -10,7 +10,7 @@
         };
 
         window.addEventListener('close-modal', event => {
-            if (event.detail.id === 'resourceIsLockedNotice' ) {
+            if (event.detail.id.endsWith('-table-action')) {
                 Livewire.dispatch('resourceLockObserver::unload')
             }
         })
