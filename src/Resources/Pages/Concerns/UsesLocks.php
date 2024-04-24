@@ -22,7 +22,7 @@ trait UsesLocks
         $this->resourceLockType = class_basename($record);
 
         if ($record->isLockedByCurrentUser()) {
-            // Do Nothing
+            $record->lock();
         } elseif ($record->isLocked()) {
             $this->openLockedResourceModal();
         } else {
@@ -55,10 +55,6 @@ trait UsesLocks
 
     protected function closeLockedResourceModal(): void
     {
-        $this->dispatch('close-modal', [
-            'id' => 'resourceIsLockedNotice',
-        ]);
-
         $this->dispatch(
             'close-modal',
             id: 'resourceIsLockedNotice'
