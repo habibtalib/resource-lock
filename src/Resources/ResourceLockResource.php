@@ -136,4 +136,9 @@ class ResourceLockResource extends Resource
     {
         return config('resource-lock.manager.navigation_sort');
     }
+
+    public static function shouldRegisterNavigation(): bool
+    {
+        return config('resource-lock.manager.should_register_navigation', true);
+    }
 }
