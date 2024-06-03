@@ -22,6 +22,7 @@
         :closeButton="false"
         :disabled="true"
         :closeByClickingAway="false"
+        :closeByEscaping="false"
     >
         <div x-data="{ resourceLockOwner: null}"  @open-modal.window="(event) => { resourceLockOwner = event.detail.resourceLockOwner}">
             <div class="flex justify-center ">
