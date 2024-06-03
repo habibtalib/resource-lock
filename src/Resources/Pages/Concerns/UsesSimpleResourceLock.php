@@ -23,7 +23,7 @@ trait UsesSimpleResourceLock
         ]);
     }
 
-    public function mountTableAction(string $name, ?string $record = null): mixed
+    public function mountTableAction(string $name, ?string $record = null, array $arguments = []): mixed
     {
         parent::mountTableAction($name, $record);
         $this->resourceRecord = $this->getMountedTableActionRecord();
