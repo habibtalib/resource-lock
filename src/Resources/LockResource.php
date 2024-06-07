@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Gate;
 use Kenepa\ResourceLock\Models\ResourceLock;
 use Kenepa\ResourceLock\Resources\ResourceLockResource\ManageResourceLocks;
 
-class ResourceLockResource extends Resource
+class LockResource extends Resource
 {
     public static function getNavigationIcon(): ?string
     {

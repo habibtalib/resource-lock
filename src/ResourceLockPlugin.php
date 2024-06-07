@@ -6,7 +6,7 @@ use Filament\Contracts\Plugin;
 use Filament\Panel;
 use Filament\Support\Facades\FilamentView;
 use Illuminate\Support\Facades\Blade;
-use Kenepa\ResourceLock\Resources\ResourceLockResource;
+use Kenepa\ResourceLock\Resources\LockResource;
 use Livewire\Livewire;
 
 class ResourceLockPlugin implements Plugin
@@ -25,7 +25,7 @@ class ResourceLockPlugin implements Plugin
     {
         $panel
             ->resources([
-                config('resource-lock.resource.class', ResourceLockResource::class),
+                config('resource-lock.resource.class', LockResource::class),
             ]);
     }
 
