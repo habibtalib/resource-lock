@@ -28,7 +28,7 @@ return [
     |
     */
     'resource' => [
-        'class' => \Kenepa\ResourceLock\Resources\ResourceLockResource::class,
+        'class' => \Kenepa\ResourceLock\Resources\LockResource::class,
     ],
 
     /*

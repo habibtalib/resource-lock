@@ -5,11 +5,11 @@ namespace Kenepa\ResourceLock\Resources\ResourceLockResource;
 use Filament\Pages\Actions\Action;
 use Filament\Resources\Pages\ManageRecords;
 use Kenepa\ResourceLock\Models\ResourceLock;
-use Kenepa\ResourceLock\Resources\ResourceLockResource;
+use Kenepa\ResourceLock\Resources\LockResource;
 
 class ManageResourceLocks extends ManageRecords
 {
-    protected static string $resource = ResourceLockResource::class;
+    protected static string $resource = LockResource::class;
 
     protected function getActions(): array
     {
