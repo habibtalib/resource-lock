@@ -1,6 +1,6 @@
 <?php
 
-namespace Kenepa\ResourceLock\Resources\ResourceLockResource;
+namespace Kenepa\ResourceLock\Resources\LockResource;
 
 use Filament\Pages\Actions\Action;
 use Filament\Resources\Pages\ManageRecords;
