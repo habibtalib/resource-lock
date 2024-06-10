@@ -9,7 +9,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Facades\Gate;
 use Kenepa\ResourceLock\Models\ResourceLock;
-use Kenepa\ResourceLock\Resources\ResourceLockResource\ManageResourceLocks;
+use Kenepa\ResourceLock\Resources\LockResource\ManageResourceLocks;
 
 class LockResource extends Resource
 {
